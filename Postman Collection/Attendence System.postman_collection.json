@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "695dc47b-0bd0-4332-8aca-b070b4a20cf3",
+		"name": "Attendence System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6570876"
+	},
+	"item": [
+		{
+			"name": "Get All Students",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"firstName\": \"Usaid\",\n        \"lastName\": \"Ahmed\",\n        \"email\": \"usaid@gmail.com\",\n        \"teacherID\": 1,\n        \"courseID\": 1,\n        \"dateStarted\": \"2012-12-22T00:00:00.000Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/students/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"students",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Student Record",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"firstName\": \"Usaid\",\n        \"lastName\": \"Ahmed\",\n        \"email\": \"usaid@gmail.com\",\n        \"teacherID\": 1,\n        \"courseID\": 1,\n        \"dateStarted\": \"2012-12-22T00:00:00.000Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/students/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"students",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete A Student",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"firstName\": \"Usaid\",\n        \"lastName\": \"Ahmed\",\n        \"email\": \"usaid@gmail.com\",\n        \"teacherID\": 1,\n        \"courseID\": 1,\n        \"dateStarted\": \"2012-12-22T00:00:00.000Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/students/delete/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"students",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"firstName\": \"Usaid\",\n        \"lastName\": \"Ahmed\",\n        \"email\": \"usaid@gmail.com\",\n        \"teacherID\": 1,\n        \"courseID\": 1,\n        \"dateStarted\": \"22.12.2022\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/students/createNewStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"students",
+						"createNewStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update A Student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"firstName\": \"Usaid\",\n        \"lastName\": \"Ahmed\",\n        \"email\": \"usaiahmadd@gmail.com\",\n        \"teacherID\": 1,\n        \"courseID\": 1,\n        \"dateStarted\": \"22.12.2022\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/students/updateStudent/?Id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"students",
+						"updateStudent",
+						""
+					],
+					"query": [
+						{
+							"key": "Id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

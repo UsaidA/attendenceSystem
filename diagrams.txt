@@ -1,0 +1,4 @@
+entity relationship diagrams
+class diagram
+sequence diagram
+use cases 
